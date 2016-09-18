@@ -1,0 +1,39 @@
+<section class="data-set" id="product-characteristics">
+  <header>
+    <a class="data-set__anchor" href="#product-characteristics">🔗</a>
+    <h2 class="data-set__title">
+      Product characteristics
+    </h2>
+  </header>
+  <!-- Example content -->
+    {% embed "data-sheet.twig" with {id: 'barcode' } %}
+      {% block label %}
+        Barcode
+      {% endblock %}
+      {% block value %}
+        7622210143006
+      {% endblock %}
+      {% block description %}
+        International Article Number
+      {% endblock %}
+    {% endembed %}
+    {% embed "data-sheet.twig"  with {id: 'common-name' }%}
+      {% block label %}
+        Common name
+      {% endblock %}
+      {% block value %}
+        Hazelnut spread with cocoa
+      {% endblock %}
+      {% block description %}{% endblock %}
+    {% endembed %}
+    {% embed "data-sheet.twig"  with {id: 'quantity' } %}
+      {% block label %}
+        Quantity
+      {% endblock %}
+      {% block value %}
+        750 g
+      {% endblock %}
+      {% block description %}{% endblock %}
+    {% endembed %}
+  <!-- /Example content -->
+</section>

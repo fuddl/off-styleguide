@@ -1,0 +1,33 @@
+// Nutrition table
+//
+//
+// Markup: nutrition-table.twig
+//
+// Styleguide: data.nutrition-table
+
+
+.nutrition-table
+  border-collapse: collapse
+  @if not $narrow
+    min-width: vw(50)
+
+
+.nutrition-table > thead
+  border-bottom: 2px solid
+
+th,
+td 
+  padding: .5vw 1vw
+  text-align: left
+
+.nutrition-table__label
+  text-align: left
+  width: vw(15)
+  padding-left: 0
+  box-sizing: border-box
+  + td,
+  + th 
+  	padding-left: 0
+
+tr 
+  border-bottom: 1px solid

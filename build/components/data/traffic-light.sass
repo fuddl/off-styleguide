@@ -1,0 +1,35 @@
+// Traffic light rating
+//
+// A traffic light rating system is a system for indicating the status of a
+// variable using the red, amber, or green of traffic lights.
+//
+// This component is named after the 
+// [Traffic light rating system][tlrs]
+//
+// [tlrs]: https://en.wikipedia.org/wiki/Traffic_light_rating_system
+//
+// .traffic-light--red    - for hight quanities
+// .traffic-light--amber - for medium quanities
+// .traffic-light--green  - for low quanities
+//
+// Markup: traffic-light.twig
+//
+// Styleguide: data.traffic-light
+
+.traffic-light__light
+  color: #eeeeee
+  font-size: vw(9)
+  width: vw(4)
+  height: vw(4)
+  line-height: vw(4)
+  display: inline-block
+  vertical-align: middle
+  margin-right: vw(1)
+  .traffic-light--red > &
+  	color: red
+  .traffic-light--amber > &
+  	color: orange
+  .traffic-light--green > &
+  	color: green
+
+

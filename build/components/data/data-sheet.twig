@@ -1,0 +1,26 @@
+{% if not id %}
+  {% set id = 'ingredients'%}
+{% endif %}
+
+<dl class="data-sheet" id="{{ id }}">
+  <dt class="data-sheet__description">
+    <a href="#{{ id }}" class="data-sheet__anchor">🔗</a>
+    {% block label %}
+      Ingredients list
+    {% endblock %}
+    {% if block('description') != '' %}
+      <br />
+      <small class="data-sheet__description">
+        {% block description %}
+          listed in order of quantity
+        {% endblock %}
+      </small>
+    {% endif %}
+  </dt>
+  <dd class="data-sheet__value">
+    <a href="#" class="data-sheet__edit">✏️</a>
+    {% block value %}
+      Rapeseed Oil (71%), Pasteurised Free Range Egg Yolk (7%), Water, Spirit Vinegar, Roasted Garlic Purée (3%), Garliç Purée (3%), Sugar, Salt, Concentrated Lemon Juice, Yellow Mustard Flour, Dried Garlic, Preservative: E202
+    {% endblock %}
+  </dd>
+</dl>

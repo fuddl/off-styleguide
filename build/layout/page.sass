@@ -1,0 +1,34 @@
+$head-height: 40px
+$rest-height: calc(100vh - #{$head-height})
+
+#page__head
+  height: $head-height
+  background: #EFEFEF
+  width: 100vw
+
+#page__sidebar
+  @if not $narrow
+    background: rgb(250, 250, 250)
+    min-height: $rest-height
+    width: vw(16)
+    padding: vw(1)
+    box-sizing: border-box
+  @else
+    @extend %hidden
+
+#page__main
+  @if not $narrow
+    order: 1
+    width: vw(84)
+    padding: vw(1)
+  @else
+    width: vw(100)
+    padding: vw(5)
+  box-sizing: border-box
+
+#page 
+  display: flex
+  flex-wrap: wrap
+  justify-content: flex-start
+  @if $min
+    font-size: vw(6)

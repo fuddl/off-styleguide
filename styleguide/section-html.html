@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Product Opener Styleguide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="node">
+  <meta name="viewport" content="width=device-width">
+
+  <meta name="theme-color" content="#ec1d25">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#ec1d25">
+  <link rel="mask-icon" sizes="any" color="#ec1d25" href="../build/images/ltb-mask-icon.svg">
+  <link rel="apple-touch-icon-precomposed" href="../build/images/ltb-192.png">
+  <link rel="shortcut icon" type="image/x-icon" href="../build/images/ltb-192.png">
+  <link rel="apple-touch-icon" href="../build/images/ltb-192.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="../build/images/ltb-192.png">
+  <link rel="icon" type="image/png" href="../build/images/ltb.svg" sizes="192x192">
+
+  <script src="../core/assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../core/assets/vendor/jquery-once/jquery.once.js"></script>
+  <script src="styleguide.js"></script>
+  <script src="../themes/lustiges_taschentheme/js/scripts.js"></script>
+  <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+
+  <link rel="stylesheet" href="kss-assets/kss.css">
+  <link rel="stylesheet" href="styleguide.css">
+
+</head>
+<body id="node">
+<div class="styleguide-sidebar">
+  <div class="styleguide-sidebar__content">
+    <header class="header">
+      <h1 id="styleguide-doc-title">Product Opener Styleguide</h1>
+    </header>
+    <nav class="nav">
+      <ul class="nav__menu">
+        <li class="nav__menu-item">
+          <a class="styleguide-nav__menu-item" href="./">
+            <span class="styleguide-nav__ref">0</span>
+            <span class="nav__name">Overview</span>
+          </a>
+        </li>
+              <li class="nav__menu-item">
+          <a class="styleguide-nav__menu-item" href="section-data.html">
+            <span class="styleguide-nav__ref">1</span>
+            <span class="nav__name">Data</span>
+          </a>
+                  </li>
+              <li class="nav__menu-item">
+          <a class="styleguide-nav__menu-item" href="section-html.html">
+            <span class="styleguide-nav__ref">2</span>
+            <span class="nav__name">Basic HTML</span>
+          </a>
+                      <ul class="styleguide-nav__menu-child">
+                          <li class="styleguide-nav__menu-item ">
+                <a class="nav__menu-link" href="section-html.html#kssref-html-block">
+                  <span class="styleguide-nav__ref ">2.1</span>
+                  <span class="nav__name">Block</span>
+                </a>
+              </li>
+                          <li class="styleguide-nav__menu-item ">
+                <a class="nav__menu-link" href="section-html.html#kssref-html-block-blockquote">
+                  <span class="styleguide-nav__ref nav__ref-child">2.1.1</span>
+                  <span class="nav__name">Blockquote</span>
+                </a>
+              </li>
+                          <li class="styleguide-nav__menu-item ">
+                <a class="nav__menu-link" href="section-html.html#kssref-html-block-dl">
+                  <span class="styleguide-nav__ref nav__ref-child">2.1.2</span>
+                  <span class="nav__name">Definition list</span>
+                </a>
+              </li>
+                          <li class="styleguide-nav__menu-item ">
+                <a class="nav__menu-link" href="section-html.html#kssref-html-block-h1">
+                  <span class="styleguide-nav__ref nav__ref-child">2.1.3</span>
+                  <span class="nav__name">Headline 1</span>
+                </a>
+              </li>
+                          <li class="styleguide-nav__menu-item ">
+                <a class="nav__menu-link" href="section-html.html#kssref-html-block-h3">
+                  <span class="styleguide-nav__ref nav__ref-child">2.1.4</span>
+                  <span class="nav__name">Headline 3</span>
+                </a>
+              </li>
+                          <li class="styleguide-nav__menu-item ">
+                <a class="nav__menu-link" href="section-html.html#kssref-html-block-h4">
+                  <span class="styleguide-nav__ref nav__ref-child">2.1.5</span>
+                  <span class="nav__name">Headline 4</span>
+                </a>
+              </li>
+                          <li class="styleguide-nav__menu-item ">
+                <a class="nav__menu-link" href="section-html.html#kssref-html-block-h5">
+                  <span class="styleguide-nav__ref nav__ref-child">2.1.6</span>
+                  <span class="nav__name">Headline 5</span>
+                </a>
+              </li>
+                          <li class="styleguide-nav__menu-item ">
+                <a class="nav__menu-link" href="section-html.html#kssref-html-block-h6">
+                  <span class="styleguide-nav__ref nav__ref-child">2.1.7</span>
+                  <span class="nav__name">Headline 6</span>
+                </a>
+              </li>
+                          <li class="styleguide-nav__menu-item ">
+                <a class="nav__menu-link" href="section-html.html#kssref-html-block-lists">
+                  <span class="styleguide-nav__ref nav__ref-child">2.1.8</span>
+                  <span class="nav__name">Lists</span>
+                </a>
+              </li>
+                          <li class="styleguide-nav__menu-item ">
+                <a class="nav__menu-link" href="section-html.html#kssref-html-block-p">
+                  <span class="styleguide-nav__ref nav__ref-child">2.1.9</span>
+                  <span class="nav__name">Paragraph</span>
+                </a>
+              </li>
+                          <li class="styleguide-nav__menu-item ">
+                <a class="nav__menu-link" href="section-html.html#kssref-html-h2">
+                  <span class="styleguide-nav__ref ">2.2</span>
+                  <span class="nav__name">Headline 2</span>
+                </a>
+              </li>
+                          <li class="styleguide-nav__menu-item ">
+                <a class="nav__menu-link" href="section-html.html#kssref-html-inline">
+                  <span class="styleguide-nav__ref ">2.3</span>
+                  <span class="nav__name">Inline</span>
+                </a>
+              </li>
+                          <li class="styleguide-nav__menu-item ">
+                <a class="nav__menu-link" href="section-html.html#kssref-html-inline-abbr">
+                  <span class="styleguide-nav__ref nav__ref-child">2.3.1</span>
+                  <span class="nav__name">Abbreviation</span>
+                </a>
+              </li>
+                          <li class="styleguide-nav__menu-item ">
+                <a class="nav__menu-link" href="section-html.html#kssref-html-inline-em">
+                  <span class="styleguide-nav__ref nav__ref-child">2.3.2</span>
+                  <span class="nav__name">Emphasis</span>
+                </a>
+              </li>
+                          <li class="styleguide-nav__menu-item ">
+                <a class="nav__menu-link" href="section-html.html#kssref-html-inline-link">
+                  <span class="styleguide-nav__ref nav__ref-child">2.3.3</span>
+                  <span class="nav__name">Link</span>
+                </a>
+              </li>
+                          <li class="styleguide-nav__menu-item ">
+                <a class="nav__menu-link" href="section-html.html#kssref-html-inline-strong">
+                  <span class="styleguide-nav__ref nav__ref-child">2.3.4</span>
+                  <span class="nav__name">Importance</span>
+                </a>
+              </li>
+                        </ul>
+                  </li>
+              <li class="nav__menu-item">
+          <a class="styleguide-nav__menu-item" href="section-style.html">
+            <span class="styleguide-nav__ref">3</span>
+            <span class="nav__name">Style</span>
+          </a>
+                  </li>
+              <li class="nav__menu-item">
+          <a class="styleguide-nav__menu-item" href="section-ui.html">
+            <span class="styleguide-nav__ref">4</span>
+            <span class="nav__name">UI</span>
+          </a>
+                  </li>
+              <li class="nav__menu-item">
+          <a class="styleguide-nav__menu-item" href="section-embed.html">
+            <span class="styleguide-nav__ref">5</span>
+            <span class="nav__name">Embedded content</span>
+          </a>
+                  </li>
+              <li class="nav__menu-item">
+          <a class="styleguide-nav__menu-item" href="section-misc.html">
+            <span class="styleguide-nav__ref">6</span>
+            <span class="nav__name">Misc.</span>
+          </a>
+                  </li>
+            </ul>
+    </nav>
+  </div>
+</div>
+<article role="main" class="main">
+
+          <div id="kssref-html" class="styleguide-section section--depth-1">
+      <div class="tabs">
+      <div class="styleguide-style">
+                <h1 class="styleguide-title title--level-1">
+          <a class="styleguide-title__permalink" href="#kssref-html">
+            <span class="styleguide-title__ref">
+              2
+              <span class="styleguide-title__permalink-hash">
+                html
+              </span>
+            </span>
+            Basic HTML
+          </a>
+        </h1>
+
+        
+              </div>
+
+                  </div>
+      
+    </div>
+          <section id="kssref-html-block" class="styleguide-section section--depth-2">
+      <div class="tabs">
+      <div class="styleguide-style">
+                <h2 class="styleguide-title title--level-2">
+          <a class="styleguide-title__permalink" href="#kssref-html-block">
+            <span class="styleguide-title__ref">
+              2.1
+              <span class="styleguide-title__permalink-hash">
+                html.block
+              </span>
+            </span>
+            Block
+          </a>
+        </h2>
+
+        
+              </div>
+
+                  </div>
+      
+    </section>
+          <section id="kssref-html-block-blockquote" class="styleguide-section section--depth-3">
+      <div class="tabs">
+      <div class="styleguide-style">
+                <h3 class="styleguide-title title--level-3">
+          <a class="styleguide-title__permalink" href="#kssref-html-block-blockquote">
+            <span class="styleguide-title__ref">
+              2.1.1
+              <span class="styleguide-title__permalink-hash">
+                html.block.blockquote
+              </span>
+            </span>
+            Blockquote
+          </a>
+        </h3>
+
+        
+              </div>
+
+                            <input id="tab-html-block-blockquote-example" type="radio" name="tabs-html-block-blockquote" checked>
+        <label class="tabs__tab" for="tab-html-block-blockquote-example">Example</label>
+        <div class="tabs__tab-content styleguide-modifier__wrapper">
+
+          <div class="styleguide-modifier__example">
+            <blockquote>
+  <p lang="de">
+    «[…] que la pratique consistant à détenir une personne en l’absence d’une base légale spécifique est incompatible avec les principes de la sécurité juridique et de la protection contre l’arbitraire, qui constituent des éléments fondamentaux à la fois de la Convention et d’un Etat de droit […]. Eu égard à la gravité de l’ingérence dans la liberté personnelle du requérant et à la nécessité d’une interprétation stricte des exigences à une détention, l’application faite en l’espèce d’une disposition légale par analogie ou par renvoi ne saurait être tolérée.»
+  </p>
+</blockquote>
+          </div>
+
+                  </div>
+                                  <input id="tab-html-block-blockquote-code" type="radio" name="tabs-html-block-blockquote">
+            <label class="tabs__tab" for="tab-html-block-blockquote-code">Code</label>
+            <div class="tabs__tab-content styleguide-markup style">
+              <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;blockquote&gt;
+  &lt;p lang=&quot;de&quot;&gt;
+    «[…] que la pratique consistant à détenir une personne en l’absence d’une base légale spécifique est incompatible avec les principes de la sécurité juridique et de la protection contre l’arbitraire, qui constituent des éléments fondamentaux à la fois de la Convention et d’un Etat de droit […]. Eu égard à la gravité de l’ingérence dans la liberté personnelle du requérant et à la nécessité d’une interprétation stricte des exigences à une détention, l’application faite en l’espèce d’une disposition légale par analogie ou par renvoi ne saurait être tolérée.»
+  &lt;/p&gt;
+&lt;/blockquote&gt;</code></pre>
+            </div>
+                        </div>
+      
+    </section>
+          <section id="kssref-html-block-dl" class="styleguide-section section--depth-3">
+      <div class="tabs">
+      <div class="styleguide-style">
+                <h3 class="styleguide-title title--level-3">
+          <a class="styleguide-title__permalink" href="#kssref-html-block-dl">
+            <span class="styleguide-title__ref">
+              2.1.2
+              <span class="styleguide-title__permalink-hash">
+                html.block.dl
+              </span>
+            </span>
+            Definition list
+          </a>
+        </h3>
+
+        
+              </div>
+
+                            <input id="tab-html-block-dl-example" type="radio" name="tabs-html-block-dl" checked>
+        <label class="tabs__tab" for="tab-html-block-dl-example">Example</label>
+        <div class="tabs__tab-content styleguide-modifier__wrapper">
+
+          <div class="styleguide-modifier__example">
+            <dl>
+  <dt>Key 1</dt>
+  <dd>Value 1</dd>
+  <dt>Key 2</dt>
+  <dd>Value 2a</dd>
+  <dd>Value 2b</dd>
+</dl>
+          </div>
+
+                  </div>
+                                  <input id="tab-html-block-dl-code" type="radio" name="tabs-html-block-dl">
+            <label class="tabs__tab" for="tab-html-block-dl-code">Code</label>
+            <div class="tabs__tab-content styleguide-markup style">
+              <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;dl&gt;
+  &lt;dt&gt;Key 1&lt;/dt&gt;
+  &lt;dd&gt;Value 1&lt;/dd&gt;
+  &lt;dt&gt;Key 2&lt;/dt&gt;
+  &lt;dd&gt;Value 2a&lt;/dd&gt;
+  &lt;dd&gt;Value 2b&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+            </div>
+                        </div>
+      
+    </section>
+          <section id="kssref-html-block-h1" class="styleguide-section section--depth-3">
+      <div class="tabs">
+      <div class="styleguide-style">
+                <h3 class="styleguide-title title--level-3">
+          <a class="styleguide-title__permalink" href="#kssref-html-block-h1">
+            <span class="styleguide-title__ref">
+              2.1.3
+              <span class="styleguide-title__permalink-hash">
+                html.block.h1
+              </span>
+            </span>
+            Headline 1
+          </a>
+        </h3>
+
+        
+              </div>
+
+                            <input id="tab-html-block-h1-example" type="radio" name="tabs-html-block-h1" checked>
+        <label class="tabs__tab" for="tab-html-block-h1-example">Example</label>
+        <div class="tabs__tab-content styleguide-modifier__wrapper">
+
+          <div class="styleguide-modifier__example">
+            <h1>Lorem ipsum</h1>
+          </div>
+
+                  </div>
+                                  <input id="tab-html-block-h1-code" type="radio" name="tabs-html-block-h1">
+            <label class="tabs__tab" for="tab-html-block-h1-code">Code</label>
+            <div class="tabs__tab-content styleguide-markup style">
+              <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;h1&gt;Lorem ipsum&lt;/h1&gt;</code></pre>
+            </div>
+                        </div>
+      
+    </section>
+          <section id="kssref-html-block-h3" class="styleguide-section section--depth-3">
+      <div class="tabs">
+      <div class="styleguide-style">
+                <h3 class="styleguide-title title--level-3">
+          <a class="styleguide-title__permalink" href="#kssref-html-block-h3">
+            <span class="styleguide-title__ref">
+              2.1.4
+              <span class="styleguide-title__permalink-hash">
+                html.block.h3
+              </span>
+            </span>
+            Headline 3
+          </a>
+        </h3>
+
+        
+              </div>
+
+                            <input id="tab-html-block-h3-example" type="radio" name="tabs-html-block-h3" checked>
+        <label class="tabs__tab" for="tab-html-block-h3-example">Example</label>
+        <div class="tabs__tab-content styleguide-modifier__wrapper">
+
+          <div class="styleguide-modifier__example">
+            <h3>Lorem ipsum</h3>
+          </div>
+
+                  </div>
+                                  <input id="tab-html-block-h3-code" type="radio" name="tabs-html-block-h3">
+            <label class="tabs__tab" for="tab-html-block-h3-code">Code</label>
+            <div class="tabs__tab-content styleguide-markup style">
+              <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;h3&gt;Lorem ipsum&lt;/h3&gt;</code></pre>
+            </div>
+                        </div>
+      
+    </section>
+          <section id="kssref-html-block-h4" class="styleguide-section section--depth-3">
+      <div class="tabs">
+      <div class="styleguide-style">
+                <h3 class="styleguide-title title--level-3">
+          <a class="styleguide-title__permalink" href="#kssref-html-block-h4">
+            <span class="styleguide-title__ref">
+              2.1.5
+              <span class="styleguide-title__permalink-hash">
+                html.block.h4
+              </span>
+            </span>
+            Headline 4
+          </a>
+        </h3>
+
+        
+              </div>
+
+                            <input id="tab-html-block-h4-example" type="radio" name="tabs-html-block-h4" checked>
+        <label class="tabs__tab" for="tab-html-block-h4-example">Example</label>
+        <div class="tabs__tab-content styleguide-modifier__wrapper">
+
+          <div class="styleguide-modifier__example">
+            <h4>Lorem ipsum</h4>
+          </div>
+
+                  </div>
+                                  <input id="tab-html-block-h4-code" type="radio" name="tabs-html-block-h4">
+            <label class="tabs__tab" for="tab-html-block-h4-code">Code</label>
+            <div class="tabs__tab-content styleguide-markup style">
+              <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;h4&gt;Lorem ipsum&lt;/h4&gt;</code></pre>
+            </div>
+                        </div>
+      
+    </section>
+          <section id="kssref-html-block-h5" class="styleguide-section section--depth-3">
+      <div class="tabs">
+      <div class="styleguide-style">
+                <h3 class="styleguide-title title--level-3">
+          <a class="styleguide-title__permalink" href="#kssref-html-block-h5">
+            <span class="styleguide-title__ref">
+              2.1.6
+              <span class="styleguide-title__permalink-hash">
+                html.block.h5
+              </span>
+            </span>
+            Headline 5
+          </a>
+        </h3>
+
+        
+              </div>
+
+                            <input id="tab-html-block-h5-example" type="radio" name="tabs-html-block-h5" checked>
+        <label class="tabs__tab" for="tab-html-block-h5-example">Example</label>
+        <div class="tabs__tab-content styleguide-modifier__wrapper">
+
+          <div class="styleguide-modifier__example">
+            <h5>Lorem ipsum</h5>
+          </div>
+
+                  </div>
+                                  <input id="tab-html-block-h5-code" type="radio" name="tabs-html-block-h5">
+            <label class="tabs__tab" for="tab-html-block-h5-code">Code</label>
+            <div class="tabs__tab-content styleguide-markup style">
+              <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;h5&gt;Lorem ipsum&lt;/h5&gt;</code></pre>
+            </div>
+                        </div>
+      
+    </section>
+          <section id="kssref-html-block-h6" class="styleguide-section section--depth-3">
+      <div class="tabs">
+      <div class="styleguide-style">
+                <h3 class="styleguide-title title--level-3">
+          <a class="styleguide-title__permalink" href="#kssref-html-block-h6">
+            <span class="styleguide-title__ref">
+              2.1.7
+              <span class="styleguide-title__permalink-hash">
+                html.block.h6
+              </span>
+            </span>
+            Headline 6
+          </a>
+        </h3>
+
+        
+              </div>
+
+                            <input id="tab-html-block-h6-example" type="radio" name="tabs-html-block-h6" checked>
+        <label class="tabs__tab" for="tab-html-block-h6-example">Example</label>
+        <div class="tabs__tab-content styleguide-modifier__wrapper">
+
+          <div class="styleguide-modifier__example">
+            <h6>Lorem ipsum</h6>
+          </div>
+
+                  </div>
+                                  <input id="tab-html-block-h6-code" type="radio" name="tabs-html-block-h6">
+            <label class="tabs__tab" for="tab-html-block-h6-code">Code</label>
+            <div class="tabs__tab-content styleguide-markup style">
+              <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;h6&gt;Lorem ipsum&lt;/h6&gt;</code></pre>
+            </div>
+                        </div>
+      
+    </section>
+          <section id="kssref-html-block-lists" class="styleguide-section section--depth-3">
+      <div class="tabs">
+      <div class="styleguide-style">
+                <h3 class="styleguide-title title--level-3">
+          <a class="styleguide-title__permalink" href="#kssref-html-block-lists">
+            <span class="styleguide-title__ref">
+              2.1.8
+              <span class="styleguide-title__permalink-hash">
+                html.block.lists
+              </span>
+            </span>
+            Lists
+          </a>
+        </h3>
+
+        
+              </div>
+
+                  </div>
+      
+    </section>
+          <section id="kssref-html-block-lists-ol" class="styleguide-section section--depth-4">
+      <div class="tabs">
+      <div class="styleguide-style">
+                <h4 class="styleguide-title title--level-4">
+          <a class="styleguide-title__permalink" href="#kssref-html-block-lists-ol">
+            <span class="styleguide-title__ref">
+              2.1.8.1
+              <span class="styleguide-title__permalink-hash">
+                html.block.lists.ol
+              </span>
+            </span>
+            Ordered list
+          </a>
+        </h4>
+
+                  <div class="styleguide-description">
+            <p>Use a <a href="#kssref-structure-numbered">numbered block</a> component on individual list items to mark, which
+Number or Letter shall be used to mark the item.</p>
+
+          </div>
+        
+              </div>
+
+                            <input id="tab-html-block-lists-ol-example" type="radio" name="tabs-html-block-lists-ol" checked>
+        <label class="tabs__tab" for="tab-html-block-lists-ol-example">Example</label>
+        <div class="tabs__tab-content styleguide-modifier__wrapper">
+
+          <div class="styleguide-modifier__example">
+            <ol>
+  <li class="numbered">
+    <span class="numbered__number">a)</span>
+    Veggies es bonus vobis
+  </li>
+  <li class="numbered">
+    <span class="numbered__number">b)</span>
+    proinde vos postulo essum
+  </li>
+  <li class="numbered">
+    <span class="numbered__number">c)</span>
+    magis kohlrabi welsh
+  </li>
+  <li class="numbered">
+    <span class="numbered__number">d)</span>
+    <p>onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</p>
+    <p>Gumbo beet greens corn soko endive gumbo gourd. </p>
+  </li>
+</ol>
+          </div>
+
+                  </div>
+                                  <input id="tab-html-block-lists-ol-code" type="radio" name="tabs-html-block-lists-ol">
+            <label class="tabs__tab" for="tab-html-block-lists-ol-code">Code</label>
+            <div class="tabs__tab-content styleguide-markup style">
+              <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;ol&gt;
+  &lt;li class=&quot;numbered&quot;&gt;
+    &lt;span class=&quot;numbered__number&quot;&gt;a)&lt;/span&gt;
+    Veggies es bonus vobis
+  &lt;/li&gt;
+  &lt;li class=&quot;numbered&quot;&gt;
+    &lt;span class=&quot;numbered__number&quot;&gt;b)&lt;/span&gt;
+    proinde vos postulo essum
+  &lt;/li&gt;
+  &lt;li class=&quot;numbered&quot;&gt;
+    &lt;span class=&quot;numbered__number&quot;&gt;c)&lt;/span&gt;
+    magis kohlrabi welsh
+  &lt;/li&gt;
+  &lt;li class=&quot;numbered&quot;&gt;
+    &lt;span class=&quot;numbered__number&quot;&gt;d)&lt;/span&gt;
+    &lt;p&gt;onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.&lt;/p&gt;
+    &lt;p&gt;Gumbo beet greens corn soko endive gumbo gourd. &lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+            </div>
+                        </div>
+      
+    </section>
+          <section id="kssref-html-block-lists-ul" class="styleguide-section section--depth-4">
+      <div class="tabs">
+      <div class="styleguide-style">
+                <h4 class="styleguide-title title--level-4">
+          <a class="styleguide-title__permalink" href="#kssref-html-block-lists-ul">
+            <span class="styleguide-title__ref">
+              2.1.8.2
+              <span class="styleguide-title__permalink-hash">
+                html.block.lists.ul
+              </span>
+            </span>
+            Bulletpoint list
+          </a>
+        </h4>
+
+                  <div class="styleguide-description">
+            <p>A list without any modifiers will use bullet points (<code>•</code>) to mark list items.</p>
+
+          </div>
+        
+              </div>
+
+                            <input id="tab-html-block-lists-ul-example" type="radio" name="tabs-html-block-lists-ul" checked>
+        <label class="tabs__tab" for="tab-html-block-lists-ul-example">Example</label>
+        <div class="tabs__tab-content styleguide-modifier__wrapper">
+
+          <div class="styleguide-modifier__example">
+            <ul>
+  <li>Veggies es bonus vobis</li>
+  <li>proinde vos postulo essum</li>
+  <li>magis kohlrabi welsh</li>
+  <li>
+    <p>onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</p>
+    <p>Gumbo beet greens corn soko endive gumbo gourd. </p>
+  </li>
+</ul>
+          </div>
+
+                  </div>
+                                  <input id="tab-html-block-lists-ul-code" type="radio" name="tabs-html-block-lists-ul">
+            <label class="tabs__tab" for="tab-html-block-lists-ul-code">Code</label>
+            <div class="tabs__tab-content styleguide-markup style">
+              <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;ul&gt;
+  &lt;li&gt;Veggies es bonus vobis&lt;/li&gt;
+  &lt;li&gt;proinde vos postulo essum&lt;/li&gt;
+  &lt;li&gt;magis kohlrabi welsh&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.&lt;/p&gt;
+    &lt;p&gt;Gumbo beet greens corn soko endive gumbo gourd. &lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+                        </div>
+      
+    </section>
+          <section id="kssref-html-block-p" class="styleguide-section section--depth-3">
+      <div class="tabs">
+      <div class="styleguide-style">
+                <h3 class="styleguide-title title--level-3">
+          <a class="styleguide-title__permalink" href="#kssref-html-block-p">
+            <span class="styleguide-title__ref">
+              2.1.9
+              <span class="styleguide-title__permalink-hash">
+                html.block.p
+              </span>
+            </span>
+            Paragraph
+          </a>
+        </h3>
+
+                  <div class="styleguide-description">
+            <p>The HTML <code>&lt;p&gt;</code> element (or HTML Paragraph Element) represents a paragraph of
+text. Paragraphs are usually represented in visual media as blocks of text
+that are separated from adjacent blocks by vertical blank space and/or
+first-line indentation. Paragraphs are block-level elements.</p>
+
+          </div>
+        
+              </div>
+
+                            <input id="tab-html-block-p-example" type="radio" name="tabs-html-block-p" checked>
+        <label class="tabs__tab" for="tab-html-block-p-example">Example</label>
+        <div class="tabs__tab-content styleguide-modifier__wrapper">
+
+          <div class="styleguide-modifier__example">
+            <p>
+  Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh
+  onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.
+</p>
+          </div>
+
+                  </div>
+                                  <input id="tab-html-block-p-code" type="radio" name="tabs-html-block-p">
+            <label class="tabs__tab" for="tab-html-block-p-code">Code</label>
+            <div class="tabs__tab-content styleguide-markup style">
+              <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;p&gt;
+  Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh
+  onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.
+&lt;/p&gt;</code></pre>
+            </div>
+                        </div>
+      
+    </section>
+          <section id="kssref-html-h2" class="styleguide-section section--depth-2">
+      <div class="tabs">
+      <div class="styleguide-style">
+                <h2 class="styleguide-title title--level-2">
+          <a class="styleguide-title__permalink" href="#kssref-html-h2">
+            <span class="styleguide-title__ref">
+              2.2
+              <span class="styleguide-title__permalink-hash">
+                html.h2
+              </span>
+            </span>
+            Headline 2
+          </a>
+        </h2>
+
+        
+              </div>
+
+                            <input id="tab-html-h2-example" type="radio" name="tabs-html-h2" checked>
+        <label class="tabs__tab" for="tab-html-h2-example">Example</label>
+        <div class="tabs__tab-content styleguide-modifier__wrapper">
+
+          <div class="styleguide-modifier__example">
+            <h2>Lorem ipsum</h2>
+          </div>
+
+                  </div>
+                                  <input id="tab-html-h2-code" type="radio" name="tabs-html-h2">
+            <label class="tabs__tab" for="tab-html-h2-code">Code</label>
+            <div class="tabs__tab-content styleguide-markup style">
+              <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;h2&gt;Lorem ipsum&lt;/h2&gt;</code></pre>
+            </div>
+                        </div>
+      
+    </section>
+          <section id="kssref-html-inline" class="styleguide-section section--depth-2">
+      <div class="tabs">
+      <div class="styleguide-style">
+                <h2 class="styleguide-title title--level-2">
+          <a class="styleguide-title__permalink" href="#kssref-html-inline">
+            <span class="styleguide-title__ref">
+              2.3
+              <span class="styleguide-title__permalink-hash">
+                html.inline
+              </span>
+            </span>
+            Inline
+          </a>
+        </h2>
+
+        
+              </div>
+
+                  </div>
+      
+    </section>
+          <section id="kssref-html-inline-abbr" class="styleguide-section section--depth-3">
+      <div class="tabs">
+      <div class="styleguide-style">
+                <h3 class="styleguide-title title--level-3">
+          <a class="styleguide-title__permalink" href="#kssref-html-inline-abbr">
+            <span class="styleguide-title__ref">
+              2.3.1
+              <span class="styleguide-title__permalink-hash">
+                html.inline.abbr
+              </span>
+            </span>
+            Abbreviation
+          </a>
+        </h3>
+
+        
+              </div>
+
+                            <input id="tab-html-inline-abbr-example" type="radio" name="tabs-html-inline-abbr" checked>
+        <label class="tabs__tab" for="tab-html-inline-abbr-example">Example</label>
+        <div class="tabs__tab-content styleguide-modifier__wrapper">
+
+          <div class="styleguide-modifier__example">
+            <abbr title="Doktor" aria-label="Doktor">Dr.</abbr> <abbr title="iurisprudentiae" aria-label="iurisprudentiae">iur.</abbr> Stefan Christen
+          </div>
+
+                  </div>
+                                  <input id="tab-html-inline-abbr-code" type="radio" name="tabs-html-inline-abbr">
+            <label class="tabs__tab" for="tab-html-inline-abbr-code">Code</label>
+            <div class="tabs__tab-content styleguide-markup style">
+              <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;abbr title=&quot;Doktor&quot; aria-label=&quot;Doktor&quot;&gt;Dr.&lt;/abbr&gt; &lt;abbr title=&quot;iurisprudentiae&quot; aria-label=&quot;iurisprudentiae&quot;&gt;iur.&lt;/abbr&gt; Stefan Christen</code></pre>
+            </div>
+                        </div>
+      
+    </section>
+          <section id="kssref-html-inline-em" class="styleguide-section section--depth-3">
+      <div class="tabs">
+      <div class="styleguide-style">
+                <h3 class="styleguide-title title--level-3">
+          <a class="styleguide-title__permalink" href="#kssref-html-inline-em">
+            <span class="styleguide-title__ref">
+              2.3.2
+              <span class="styleguide-title__permalink-hash">
+                html.inline.em
+              </span>
+            </span>
+            Emphasis
+          </a>
+        </h3>
+
+        
+              </div>
+
+                            <input id="tab-html-inline-em-example" type="radio" name="tabs-html-inline-em" checked>
+        <label class="tabs__tab" for="tab-html-inline-em-example">Example</label>
+        <div class="tabs__tab-content styleguide-modifier__wrapper">
+
+          <div class="styleguide-modifier__example">
+            Proinde <em>Gumbo</em> postulo
+          </div>
+
+                  </div>
+                                  <input id="tab-html-inline-em-code" type="radio" name="tabs-html-inline-em">
+            <label class="tabs__tab" for="tab-html-inline-em-code">Code</label>
+            <div class="tabs__tab-content styleguide-markup style">
+              <pre class="prettyprint linenums lang-html"><code data-language="html">Proinde &lt;em&gt;Gumbo&lt;/em&gt; postulo</code></pre>
+            </div>
+                        </div>
+      
+    </section>
+          <section id="kssref-html-inline-link" class="styleguide-section section--depth-3">
+      <div class="tabs">
+      <div class="styleguide-style">
+                <h3 class="styleguide-title title--level-3">
+          <a class="styleguide-title__permalink" href="#kssref-html-inline-link">
+            <span class="styleguide-title__ref">
+              2.3.3
+              <span class="styleguide-title__permalink-hash">
+                html.inline.link
+              </span>
+            </span>
+            Link
+          </a>
+        </h3>
+
+        
+              </div>
+
+                            <input id="tab-html-inline-link-example" type="radio" name="tabs-html-inline-link" checked>
+        <label class="tabs__tab" for="tab-html-inline-link-example">Example</label>
+        <div class="tabs__tab-content styleguide-modifier__wrapper">
+
+          <div class="styleguide-modifier__example">
+            Proinde <a href="index.html">Gumbo</a> postulo
+          </div>
+
+                  </div>
+                                  <input id="tab-html-inline-link-code" type="radio" name="tabs-html-inline-link">
+            <label class="tabs__tab" for="tab-html-inline-link-code">Code</label>
+            <div class="tabs__tab-content styleguide-markup style">
+              <pre class="prettyprint linenums lang-html"><code data-language="html">Proinde &lt;a href=&quot;index.html&quot;&gt;Gumbo&lt;/a&gt; postulo</code></pre>
+            </div>
+                        </div>
+      
+    </section>
+          <section id="kssref-html-inline-strong" class="styleguide-section section--depth-3">
+      <div class="tabs">
+      <div class="styleguide-style">
+                <h3 class="styleguide-title title--level-3">
+          <a class="styleguide-title__permalink" href="#kssref-html-inline-strong">
+            <span class="styleguide-title__ref">
+              2.3.4
+              <span class="styleguide-title__permalink-hash">
+                html.inline.strong
+              </span>
+            </span>
+            Importance
+          </a>
+        </h3>
+
+        
+              </div>
+
+                            <input id="tab-html-inline-strong-example" type="radio" name="tabs-html-inline-strong" checked>
+        <label class="tabs__tab" for="tab-html-inline-strong-example">Example</label>
+        <div class="tabs__tab-content styleguide-modifier__wrapper">
+
+          <div class="styleguide-modifier__example">
+            Proinde <strong>Gumbo</strong> postulo
+          </div>
+
+                  </div>
+                                  <input id="tab-html-inline-strong-code" type="radio" name="tabs-html-inline-strong">
+            <label class="tabs__tab" for="tab-html-inline-strong-code">Code</label>
+            <div class="tabs__tab-content styleguide-markup style">
+              <pre class="prettyprint linenums lang-html"><code data-language="html">Proinde &lt;strong&gt;Gumbo&lt;/strong&gt; postulo</code></pre>
+            </div>
+                        </div>
+      
+    </section>
+  </article>
+
+<!-- SCRIPTS -->
+<script src="kss-assets/kss.js"></script>
+<script src="kss-assets/scrollspy.js"></script>
+<script src="kss-assets/prettify.js"></script>
+<script>
+  prettyPrint();
+  var spy = new ScrollSpy('#node', {
+    nav: '.nav__menu-child > li > a',
+    className: 'is-in-viewport'
+  });
+</script>
+
+
+
+
+<!-- Automatically built using <a href="https://github.com/node/node">node</a>. -->
+</body>
+</html>

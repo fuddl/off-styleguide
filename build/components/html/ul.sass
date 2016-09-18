@@ -1,0 +1,22 @@
+// Bulletpoint list
+//
+// A list without any modifiers will use bullet points (`•`) to mark list items.
+//
+// Markup:
+// <ul>
+//   <li>Veggies es bonus vobis</li>
+//   <li>proinde vos postulo essum</li>
+//   <li>magis kohlrabi welsh</li>
+//   <li>
+//     <p>onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</p>
+//     <p>Gumbo beet greens corn soko endive gumbo gourd. </p>
+//   </li>
+// </ul>
+//
+// Styleguide: html.block.lists.ul
+
+li 
+  > p:first-child
+    margin-top: 0
+  > p:last-child
+    margin-bottom: 0

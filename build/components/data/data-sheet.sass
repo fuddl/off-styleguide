@@ -1,0 +1,74 @@
+// Data sheet 
+//
+// Markup: data-sheet.twig
+//
+// Styleguide: data.data-sheet
+
+
+.data-sheet
+  overflow: hidden
+  margin: vw(2) 0
+  @if not $narrow
+    width: vw(50)
+  &:target
+    padding: vw(2) 0
+    margin: vw(2) 0
+    border: 
+      top: 1px solid 
+      bottom: 1px solid 
+  & + &
+    margin-top: vw(-1)
+
+.data-sheet__description
+  @if not $narrow
+    float: left
+    clear: both
+    width: vw(15)
+    padding-right: 1em
+    box-sizing: border-box
+  font-weight: bold
+
+.data-sheet__value
+  position: relative
+  @if not $narrow
+    float: right
+    clear: right
+    width: vw(35)
+    margin-left: 0
+  @else
+    margin-left: 0
+    margin-bottom: vw(2.5)
+
+
+.sheet__description
+  @if $narrow
+    @extend %hidden
+  @else
+    font-weight: normal
+    font-size: .75em
+  position: relative
+.data-sheet__anchor
+  display: none
+  @if not $narrow
+    position: absolute
+    left: -1.2em
+    width: 1.2em
+    text-decoration: inherit
+    color: inherit
+    &:hover
+      color: #0067ff
+    :hover > &
+      display: block
+
+.data-sheet__edit
+  display: none
+  @if not $narrow
+    left: -1.2em
+    width: 1.2em
+    position: absolute
+    text-decoration: inherit
+    color: inherit
+    &:hover
+      color: #0067ff
+    :hover > &
+      display: block

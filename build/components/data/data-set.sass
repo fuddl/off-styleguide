@@ -1,0 +1,31 @@
+// Data set
+// 
+// A wrapper for grouping product information into sections like:
+//
+// * Product characteristics
+// * Ingredients
+// * Nutrition facts
+//
+// Each set requires an ID which is unique within the document in order to allow
+// linking on that particular set.
+//
+// Markup: data-set.twig
+//
+// Styleguide: data.data-set
+
+.data-set
+  position: relative
+
+.data-set__anchor
+  display: none
+  font-size: .5em
+  @if not $narrow
+    position: absolute
+    left: -1.2em
+    width: 1.2em
+    text-decoration: inherit
+    color: inherit
+    &:hover
+      color: #0067ff
+    :hover > &
+      display: block

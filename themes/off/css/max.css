@@ -254,6 +254,13 @@ tr {
   :hover > .data-sheet__edit {
     display: block; }
 
+.product-title__name {
+  margin-top: 0; }
+
+.product-title__name-suffix {
+  margin-top: -1em;
+  font-weight: bold; }
+
 .indention {
   display: inline-block;
   width: 2vw; }

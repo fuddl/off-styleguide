@@ -162,7 +162,7 @@ gulp.task 'icons', ->
     .pipe gulp.dest paths.res
   gulp.run 'sass'
 
-gulp.task 'watch', ['styleguide', 'sass', 'icons'], ->
+gulp.task 'watch', ['styleguide', 'sass'], ->
   gulp.watch 'build/components/**/*.sass', ['styleguide']
   gulp.watch 'build/components/**/*.scss', ['styleguide']
   gulp.watch 'build/components/**/*.twig', ['styleguide']

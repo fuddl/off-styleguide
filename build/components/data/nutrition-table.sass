@@ -19,6 +19,10 @@ th,
 td 
   padding: .5vw 1vw
   text-align: left
+tr 
+  border-bottom: 1px solid
+  &:target
+    background-color: #eeeeee
 
 .nutrition-table__label
   text-align: left
@@ -27,7 +31,20 @@ td
   box-sizing: border-box
   + td,
   + th 
-  	padding-left: 0
+    padding-left: 0
 
-tr 
-  border-bottom: 1px solid
+.nutrition-table__link-wrapper
+  position: relative
+  display: none
+  :hover > &
+    display: block
+
+.nutrition-table__link
+  &::before
+    content: '🔗'
+  position: absolute
+  left: -1.2em
+  width: 1.2em
+  color: inherit
+  &:hover
+    color: #00ccff
